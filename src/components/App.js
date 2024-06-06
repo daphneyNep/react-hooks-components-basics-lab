@@ -1,5 +1,7 @@
 import React from "react";
 
+
+
 function NavBar() {
   return (
     <nav>
@@ -16,15 +18,21 @@ function Home() {
   );
 }
 
-{/* write an <About> component here */}
-
-
-function App() {
+function About() {
   return (
-    <div>
+    <div id="about">
+      <h2>{About}</h2>
+    </div>
+  )
+};
+
+
+function App( ) {
+  return (
+    <div className="App">
       <NavBar />
-      {/* add the <Home> component here */}
-      {/* add your <About> component here */}
+      <Home h1={Home}/>
+      <About h2={About}/>
     </div>
   );
 }
